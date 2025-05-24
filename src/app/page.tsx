@@ -1,8 +1,19 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-800">
       <header className="flex items-center justify-between p-6 bg-gray-900 text-white">
-        <h1 className="text-3xl font-bold">AVU</h1>
+        <div className="flex items-center">
+          <Image
+            src="/images/AVU_logo001_white_no_BG.webp"
+            alt="AVU Drone Logo"
+            width={150}
+            height={50}
+            className="h-12 w-auto"
+            priority
+          />
+        </div>
         <p className="text-lg">Elevate Perspective. Deliver Precision.</p>
       </header>
 
@@ -45,7 +56,16 @@ export default function Home() {
       </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
-        &copy; {new Date().getFullYear()} AVU Drone Services. All rights reserved.
+        <div className="flex flex-col items-center gap-4">
+          <Image
+            src="/images/AVU_logo001_white_no_BG.webp"
+            alt="AVU Drone Logo"
+            width={120}
+            height={40}
+            className="h-10 w-auto"
+          />
+          <p>&copy; {new Date().getFullYear()} AVU Drone. All rights reserved.</p>
+        </div>
       </footer>
     </main>
   );
