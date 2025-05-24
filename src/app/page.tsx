@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-800">
       <header className="flex items-center justify-between p-6 bg-gray-900 text-white">
-        <h1 className="text-3xl font-bold">Aevu</h1>
+        <h1 className="text-3xl font-bold">AVU</h1>
         <p className="text-lg">Elevate Perspective. Deliver Precision.</p>
       </header>
 
@@ -45,7 +45,7 @@ export default function Home() {
       </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
-        &copy; {new Date().getFullYear()} Aevu Drone Services. All rights reserved.
+        &copy; {new Date().getFullYear()} AVU Drone Services. All rights reserved.
       </footer>
     </main>
   );
