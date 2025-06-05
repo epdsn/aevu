@@ -19,26 +19,29 @@ export default function Home() {
               Aerial Excellence
             </h1>
             <p className="text-xl md:text-2xl max-w-2xl mb-8">
-              Capturing the world from new perspectives
+              Capturing Arizona from new perspectives
             </p>
-            <button className="bg-white text-gray-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
+            <a 
+              href="#contact"
+              className="bg-white text-gray-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer"
+            >
               Get Started
-            </button>
+            </a>
           </div>
         </div>
       </div>
 
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
-        <div className="container mx-auto px-4">
+      <header className="fixed top-0 left-0 right-0 z-50">
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900/80 to-transparent backdrop-blur-sm"></div>
+        <div className="container mx-auto px-4 relative">
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center">
               <Image
                 src="/images/AVU_logo001_white_no_BG.webp"
                 alt="AVU Drone Logo"
-                width={150}
-                height={50}
-                className="h-12 w-auto"
+                width={179}
+                height={30}
                 priority
               />
             </div>
@@ -59,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="p-8 md:p-12 bg-white">
+      <section id="contact" className="p-8 md:p-12 bg-white scroll-mt-20">
         <div className="container mx-auto">
           <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-center">Get in Touch</h3>
           <form className="max-w-xl mx-auto space-y-4">
@@ -98,9 +101,8 @@ export default function Home() {
             <Image
               src="/images/AVU_logo001_white_no_BG.webp"
               alt="AVU Drone Logo"
-              width={120}
-              height={40}
-              className="h-10 w-auto"
+              width={179}
+              height={30}
             />
             <p>&copy; {new Date().getFullYear()} AVU Drone. All rights reserved.</p>
           </div>
